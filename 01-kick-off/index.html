@@ -1,0 +1,444 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <title>reveal.js</title>
+
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/reveal.css">
+        <link rel="stylesheet" href="css/theme/night.css">
+
+        <!-- Theme used for syntax highlighting of code -->
+        <link rel="stylesheet" href="lib/css/monokai.css">
+
+        <!-- Printing and PDF exports -->
+        <script>
+            var link = document.createElement( 'link' );
+            link.rel = 'stylesheet';
+            link.type = 'text/css';
+            link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+            document.getElementsByTagName( 'head' )[0].appendChild( link );
+        </script>
+    </head>
+    <body>
+        <div class="reveal">
+            <div class="slides">
+                <section>
+                    <img src="images/python-logo.png" width="89" height="89">
+                    <p>Welcome to the<br>Python Community</p>
+                    <p class="fragment" data-fragment-index="1">About Python</p>
+                    <p class="fragment" data-fragment-index="2">PyCon Balkan</p>
+                    <p class="fragment" data-fragment-index="3">Our community</p>
+                </section>
+                <section>
+                    <h5>Florin Ciurcanu</h5>
+                    <p class="fragment" data-fragment-index="1">an eXtreme Programmer</p>
+                    <p class="fragment" data-fragment-index="2">with a soft spot for clean code</p>
+                    <p class="fragment" data-fragment-index="3">and delivering on time</p>
+                    <p class="fragment" data-fragment-index="4">find me on GitHub at <a href="https://github.com/kopsha">@kopsha</a></p>
+                    <aside class="notes">
+                        <p>
+                            1992 - I wrote my first program in BASIC
+                            <br>1996 - I sold my first application
+                            <br>2000 - Reunion 2k first romanian demoscene
+                            <br>2004 - First employment as software developer
+                            <br>2012 - First contact with Python language
+                            <br>2019 - Software architect @ Specialized project
+                        </p>
+                    </aside>
+                </section>
+                <section>
+                    <h4>Why Python?</h4>
+                    <blockquote class="fragment" data-fragment-index="1">
+                        I hate code and I want as little of it<br>as possible in our products.
+                    </blockquote>
+                    <p class="fragment" data-fragment-index="2" align="right"><small>Jack Diederich</small></p>
+                    <br>
+                    <p>
+                        <span class="fragment" data-fragment-index="3">We do not ship code,<br/></span>
+                        <span class="fragment" data-fragment-index="4">we ship features.</span>
+                    </p>
+                </section>
+                <section>
+                    <h4>Why Python?</h4>
+                    <p>Python is one of those rare languages which can claim to be both simple and powerful.<br></p>
+                    <pre class="python fragment" data-fragment-index="1"><code data-trim>
+colors = ['red', 'green', 'blue']
+for color in sorted(colors):
+    print(color)
+                    </code></pre>
+                    <aside class="notes">
+                        <p>Reading a good Python program feels almost like reading English.</p>
+                        <p>Perfection is achieved, not when there is nothing more to add, but when there is nothing left to take away. - Antoine de Saint-Exupery</p>
+                    </aside>
+                </section>
+                <section>
+                    <h4>Why Python?</h4>
+                    <p class="fragment" data-fragment-index="1">In most languages, switching the values of
+                        <br>variables it will look like this:</p>
+                    <pre class="java fragment" data-fragment-index="1"><code data-trim>
+tmp = a
+a = b
+b = tmp
+                    </code></pre>
+                    <p class="fragment" data-fragment-index="2">and in Python:</p>
+                    <pre class="python fragment" data-fragment-index="2"><code data-trim>
+a, b = b, a
+                    </code></pre>
+                </section>
+                    <aside class="notes">
+                        You will find yourself pleasantly surprised to see how easy it is to concentrate on the solution to the problem rather than the syntax and structure of the language you are programming in.
+
+                        When you write programs in Python, you never need to bother about the low-level details such as managing the memory, file handles, sockets, etc.
+
+                        Guido van Rossum, the creator of the Python language, named the language after the BBC show "Monty Python’s Flying Circus".
+                   </aside>
+                <section>
+                    <h4>Why Python?</h4>
+                    The Zen of Python
+                    <pre class="console fragment" data-fragment-index="1"><code data-trim>
+$ python -m this 
+The Zen of Python, by Tim Peters
+
+Beautiful is better than ugly.
+Explicit is better than implicit.
+Simple is better than complex.
+Complex is better than complicated.                        
+...
+                    </code></pre>
+                </section>
+                <section>
+                    <h4>Some cool language features</h4>
+                    <ul>
+                        <li class="python fragment" data-fragment-index="1">Looping through almost anything</li>
+                        <li class="python fragment" data-fragment-index="2">Arbitrary integers size</li>
+                        <li class="python fragment" data-fragment-index="3">Lists and Dictionaries</li>
+                        <li class="python fragment" data-fragment-index="4">Properties</li>
+                        <li class="python fragment" data-fragment-index="5">Generators</li>
+                        <li class="python fragment" data-fragment-index="6">Decorators</li>
+                    </ul>
+                    <p class="python fragment" data-fragment-index="7">... this can take a while</p>
+                    <aside class="notes">
+                        <p>
+                            the for loop has an else clause
+                            <br>yep, that's right "arbitrary"
+                            <br>mention list comprehension, O(1) dictionary access time complexity
+                            <br>forget about getters and setters
+                            <br>do not return values, yield them instead
+                            <br>the end of copy & paste pattern
+                        </p>
+                        <p>
+                            Remember "With great power comes great responsibility"
+                        </p>
+                    </aside>
+                </section>
+                <section data-background-image="images/stackoverflow-trends.png" data-background-size="contain">
+                    <aside class="notes">
+                        Python was conceived in the late 1980's and it was released in 1991.
+                        Python 3 was released in 2008 and is not fully backwards compatible.
+                        Its popularity has skyrocketed since...
+
+                        Stop / Ask questions / Prepare for next topic
+                    </aside>
+                </section>
+                <section>
+                    <h4>PyCon Balkan 2019</h4>
+                    <ul>
+                        <li class="python fragment" data-fragment-index="1">Helpfull tools, frameworks and their pitfalls</li>
+                        <li class="python fragment" data-fragment-index="2">What I learned from {my experience} talks</li>
+                        <li class="python fragment" data-fragment-index="3">Way too many neural networks projects</li>
+                        <li class="python fragment" data-fragment-index="4">Non technical talks</li>
+                    </ul>
+                    <aside class="notes">
+                        Non tech talks related to where python is used and what they might need.
+                    </aside>
+                </section>
+                <section>
+                    <h4>PyCon Balkan 2019 extras</h4>
+                    <ul>
+                        <li class="python fragment" data-fragment-index="1">Lightning talks</li>
+                        <li class="python fragment" data-fragment-index="2">Hands-on workshops</li>
+                        <li class="python fragment" data-fragment-index="3">And a party</li>
+                    </ul>
+                </section>
+                <section>
+                    <h4>Some worthy talks</h4>
+                    <p class="python fragment" data-fragment-index="1">
+                        <a href="https://pyconbalkan.com/speaker/aly-sivji/#talk-if-statements-are-a-code-smell">If statements are a code-smell</a>
+                        <br><small>hello, does this "<i>if considered harmful</i>" ring any bell ?</small>
+                    </p>
+                    <p class="python fragment" data-fragment-index="2">
+                        <a href="https://pyconbalkan.com/speaker/andre-pastore/#talk-from-nothing-everything-is-built">From nothing, Everything is built</a>
+                        <br><small>Tests help us build better software. Pytest helps us write better tests.</small>
+                    </p>
+                    <p class="python fragment" data-fragment-index="3">
+                        <a href="https://www.youtube.com/watch?v=2sEPipctTxw">(Keynote) Pioneering real-time</a>
+                        <br><small>Real-time programming in python, booring</small>
+                    </p>
+                </section>
+                <section>
+                    <h4>Some worthy talks</h4>
+                    <p class="python fragment" data-fragment-index="1">
+                        <a href="https://2019.secrus.org/lang/en/program/submitted-presentations/mpypl-python-monadic-pipeline-library-for-complex-functional-data-processing/">
+                            A monadic pipeline library for<br>complex functional data processing
+                        </a>
+                        <br><small>Training a complex deep learning model for event detection in sport videos</small>
+                    </p>
+                    <p class="python fragment" data-fragment-index="2">
+                        <a href="https://pyconbalkan.com/speaker/lori-repanich-hill/#talk-pair-programming-the-agile-technique-that-makes-developers-groan-or-grin">
+                            Pair programming makes developers<br>groan or grin
+                        </a>
+                        <br><small>Explore the benefits and break down costs of a project developed<br>exclusively by remote pair programming</small>
+                    </p>
+                    <aside class="notes">
+                        Pair programming benefits:
+                        <ul>
+                            <li>development process is enjoyed, less frustrations</li>
+                            <li>improved learning and comprehension</li>
+                            <li>develops communication skills</li>
+                            <li>higher code quality and more readability</li>
+                            <li>reduced debugging time</li>
+                            <li>trust builds between partners</li>
+                            <li>productivity increase 15%</li>
+                        </ul>
+                    </aside>
+                </section>
+                <section>
+                    <h4>Some worthy talks</h4>
+                    <p class="python fragment" data-fragment-index="1">
+                        <a href="https://pyconbalkan.com/speaker/mariia-matskevichus/#talk-how-to-train-a-neural-network-to-classify-screws-by-photo">
+                            A neural network for classifying screws by photo
+                        </a>
+                        <br><small>The full pipeline of building the visual search system from a scratch with Python</small>
+                    </p>
+                    <p class="python fragment" data-fragment-index="2">
+                        <a href="https://pyconbalkan.com/speaker/martin-czygan/#talk-creative-jupyter-literate-programming-exploration-and-collaboration">
+                            Literate programming, exploration and collaboration
+                        </a>
+                        <br><small>Reflections on literate programming in general and highlights scenarios and useful techniques, as well as projects that are developing in the expanding Jupyter ecosystem</small>
+                    </p>
+                    <p class="python fragment" data-fragment-index="3">
+                        <a href="https://pyconbalkan.com/speaker/nejc-zupan/#talk-pipenv-python-dev-workflow-for-humans">
+                            Pipenv: python dev workflow for humans
+                        </a>
+                        <br><small>Pipenv is a tool that aims to bring the best of packaging worlds (bundler, composer, npm, cargo, yarn, etc.) to the Python world.</small>
+                    </p>
+                    <aside class="notes">
+                        Literate programming:
+                        <ul>
+                            <li>Describe your intentions</li>
+                            <li>Document implementation</li>
+                            <li>Allow others to play with relevant data</li>
+                        </ul>
+                    </aside>
+                </section>
+                <section>
+                    <h4>Some worthy talks</h4>
+                    <p class="python fragment" data-fragment-index="1">
+                        <a href="https://pyconbalkan.com/speaker/nikola-zivkovic/#talk-barrel-of-a-gan">
+                            Barrel of a GAN
+                        </a>
+                        <br><small>Generative Adversarial Networks: talk about the basic structure of these networks, the ways they work and some variations</small>
+                    </p>
+                    <p class="python fragment" data-fragment-index="2">
+                        <a href="https://pyconbalkan.com/speaker/nikoleta-glynatsi/#talk-the-fallacy-of-meritocracy">
+                            (Keynote) The fallacy of meritocracy
+                        </a>
+                        <br><small>despite all our best intentions, does meritocracy really work?</small>
+                    </p>
+                    <p class="python fragment" data-fragment-index="3">
+                        <a href="">
+                            Distributed Domain Destruction
+                        </a>
+                        <br><small>Adventures in building distributed systems</small>
+                    </p>
+                    <aside class="notes">
+                        <p>
+                            Tales about the series of unfortunate events that may happen as your application grows in complexity.
+                            <br>Tales like disk space fluctuations, importance of logging, NoSql problems, restructuring your order of execution in code for performance gains, short sighted albeit logical architectural decisions that will cost you in the long run.
+                        </p>
+                    </aside>
+                </section>
+                <section>
+                    <h4>Some worthy talks</h4>
+                    <p class="python fragment" data-fragment-index="1">
+                        <a href="https://cz.pycon.org/2019/programme/talks/24/#main">
+                            Github Bots: Rise Of The Machines
+                        </a>
+                        <br><small>A quick walkthrough of the tasks that can be automated and learn the important concepts of creating a GitHub bot</small>
+                    </p>
+                    <p class="python fragment" data-fragment-index="2">
+                        <a href="">
+                            NLP for dinner - Chatbot language learning
+                        </a>
+                        <br><small>Python + Rasa NLU powered by Tensorflow and Recurrent neural Networks architecture to create a bot that understands and texts in Czech</small>
+                    </p>
+                    <p class="python fragment" data-fragment-index="3">
+                        <a href="">
+                            Snakes and Magic
+                        </a>
+                        <br><small>operators, meta classes, descriptors, attribute access mechanisms and of course magic methods</small>
+                    </p>
+                    <aside class="notes">
+                        <p>
+                            
+                        </p>
+                    </aside>
+                </section>
+                <section>
+                    <h5>Romanian speakers</h5>
+                    <p class="python fragment" data-fragment-index="1">
+                        <u class="to_upper">Alex Plugaru</u>
+                        <br><small>CTO @ gorgias.com</small>
+                        <br><a href="https://plugaru.org/2016/03/04/flask-celery-kubernetes/">
+                            Scaling Flask and Celery
+                        </a>
+                        <br><small>Lessons learned from building a SaaS application (from 0 to 1000 businesses) for the past 3 years on how we scaled our Flask + Celery application</small>
+                    </p>
+                    <p class="python fragment" data-fragment-index="2">
+                        <u class="to_upper">Ionel Maries</u>
+                        <br><small>RoPython Cluj community leader</small>
+                        <br><a href="https://blog.ionelmc.ro/presentations/no-code-is-perfect">
+                            No code is perfect
+                        </a>
+                        <br><small>
+                            Did you ever hear this: "We write code so good we don't need debugging"
+                            <br>I have, right before "We can't find enough developers."
+                        </small>
+                    </p>
+                </section>
+                <section>
+                    <h5>Romanian speakers</h5>
+                    <p class="fragment" data-fragment-index="1">
+                        <u class="to_upper">Daniela Craciun</u>
+                        <br><small>Software developer @ Delivery Hero</small>
+                        <br><a href="https://danielacraciun.github.io/apartment-hunter/">
+                            Apartment hunting
+                        </a>
+                        <br><small>using scraping, data science and some additional handy tools
+                            <br>to find an apartment in a competitive renting</small>
+                    </p>
+                    <p class="fragment" data-fragment-index="2">
+                        <u class="to_upper">Toni Simu</u>
+                        <br><small>Software developer @ Yonder</small>
+                        <br><a href="">
+                            4 wheeled python with Raspberry Pi
+                        </a>
+                        <br><small>Autonomous driving using python image processing
+                            <br>running on a single board computer</small>
+                    </p>
+                    <aside class="notes">
+                        <p>
+                            
+                        </p>
+                    </aside>
+                </section>
+                <section>
+                    <h4>Python conferences close to us</h4>
+                    <ul>
+                        <li>DjangoCon, Portugal</li>
+                        <li>EuroPython, Switzerland</li>
+                        <li>PyCon SK, Slovakia</li>
+                        <li>PyCon PL, Poland</li>
+                    </ul>
+                </section>
+                <section>
+                    <h4>Our python community</h4>
+                    <p>Principles</p>
+                    <p>Methodology</p>
+                    <p>Resources</p>
+                    <p>Projects</p>
+                    <aside class="notes">
+                        <p>Connect people who share the passion for python programming.</p>
+                        <p>Help newcommers to adopt The Zen of Python</p>
+                        <p>Provide technical support for client projects.</p>
+                    </aside>
+                </section>
+                <section>
+                    <h4>Governing principles</h4>
+                    <p class="fragment" data-fragment-index="1">Liberal contribution
+                        <br><small>the people who do most work are recognized as most influential</small>
+                    </p>
+                    <p class="fragment" data-fragment-index="2">
+                        and
+                        <br>Benevolent dictatorship
+                        <br><small>one person (project owner) has the final say on all major decisions</small>
+                    </p>
+                </section>
+                <section data-background-image="images/our-ways.png" data-background-size="contain">
+                    <aside class="notes">
+                        <p>Open: We all have access to the information and materials necessary for doing our best work.</p>
+                        <p>Collaboration: Pair programming, feedback, demo.</p>
+                        <p>Iterate: Rapid prototypes can lead to rapid discoveries.</p>
+                        <p>Community: Good ideas can come from anywhere and the best ideas should win. Shared values guide decision making and community goals supersede individuals.</p>
+                    </aside>
+                </section>
+                <section>
+                    <h4>Typical activities</h4>
+                    <p class="fragment" data-fragment-index="1">Coding</p>
+                    <p class="fragment" data-fragment-index="2">Testing</p>
+                    <p class="fragment" data-fragment-index="3">Listening</p>
+                    <p class="fragment" data-fragment-index="4">Designing</p>
+                    <aside class="notes">
+                        <p>Frequent "releases" in short development cycles, which is intended to improve productivity and introduce checkpoints.</p>
+                        <p>Working in pairs or doing extensive code review.</p>
+                        <p>Unit testing all code.</p>
+                    </aside>
+                </section>
+                <section>
+                    <h4>Values</h4>
+                    <p class="fragment" data-fragment-index="1">Communication
+                        <br><small>github, slack</small>
+                    </p>
+                    <p class="fragment" data-fragment-index="2">Courage
+                        <br><small>live coding, pair programming</small>
+                    </p>
+                    <p class="fragment" data-fragment-index="3">Simplicity
+                        <br><small>YAGNI, design for today</small>
+                    </p>
+                    <p class="fragment" data-fragment-index="4">Feedback
+                        <br><small>continuous integration</small>
+                        <br><small>quick demo sessions</small>
+                    </p>
+                    <aside class="notes">
+                        <p>Communication aspects: direct, documentation, code, tests.</p>
+                        <p>Courage to design for today, to throw code away, to challenge your own solution, to give honest feedback.</p>
+                        <p>Simplicity: Coding and designing for uncertain future requirements implies the risk of spending resources on something that might not be needed.</p>
+                        <p>Feedback aspects: from the system, customer, team.</p>
+                    </aside>
+                </section>
+                <section>
+                    <h4>Projects proposals</h4>
+                    <p class="fragment" data-fragment-index="1">
+                        Let's solve our needs first
+                        <br><small>please submit ideas</small>
+                    </p>
+                    <p class="fragment" data-fragment-index="2">
+                        Project Reports Assistant
+                        <br><small>help our project managers</small>
+                    </p>
+                </section>
+            </div>
+        </div>
+
+        <script src="js/reveal.js"></script>
+
+        <script>
+            // More info about config & dependencies:
+            // - https://github.com/hakimel/reveal.js#configuration
+            // - https://github.com/hakimel/reveal.js#dependencies
+            Reveal.initialize({
+                dependencies: [
+                    { src: 'plugin/markdown/marked.js' },
+                    { src: 'plugin/markdown/markdown.js' },
+                    { src: 'plugin/notes/notes.js', async: true },
+                    { src: 'plugin/highlight/highlight.js', async: true }
+                ]
+            });
+            // Shows the slide number using default formatting
+            Reveal.configure({ slideNumber: true });
+        </script>
+    </body>
+</html>
