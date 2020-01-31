@@ -21,12 +21,12 @@ body {
 
 ::selection {
   color: #fff;
-  background: #ff99bb;
+  background: #ff3366;
   text-shadow: none; }
 
 ::-moz-selection {
   color: #fff;
-  background: #ff99bb;
+  background: #ff3366;
   text-shadow: none; }
 
 .reveal .slides section,
@@ -222,7 +222,7 @@ body {
  * LINKS
  *********************************************/
 .reveal a {
-  color: #ff99bb;
+  color: #ff3366;
   text-decoration: none;
   -webkit-transition: color .15s ease;
   -moz-transition: color .15s ease;
