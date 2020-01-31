@@ -1,3 +1,8 @@
+---
+permalink: /01-kick-off/index.html
+---
+
+
 # community-presentations
 
   Date      | Description                | Link
